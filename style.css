@@ -2,18 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 82%;
+    width: 82%;
+
 }
 
 body {
     text-align: center;
 }
 
+.logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
 #Scythe {
     animation-name: Scythe;
-    animation-duration: 4s;
+    animation-duration: 2.5s;
     animation-iteration-count: infinite;
-    /* animation-direction: alternate-reverse; */
-    /* animation-timing-function: ease-in; */
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in;
     transform-origin: center;
     transform-box: border-box;
 }
@@ -33,32 +44,47 @@ body {
     animation-iteration-count: infinite;
     transform-origin: center;
     animation-timing-function: ease-in;
-
-
+    animation-direction: alternate-reverse;
 }
 
 @keyframes glitterRight{
     0% {
-        transform: scale(0.95);
+        transform: scale(0.95) rotate(14deg);
+        box-shadow: 0 0 0 0 rgba(255, 165, 235, 0.7);
     }
     70% {
-        transform: scale(1.2);
+        transform: scale(1.2) rotate(5deg);
+        box-shadow: 0 0 0 10px rgba(244, 94, 212, 0.7);
+    }
+    100%{
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgb(255, 255, 255);
+    }
+}
+
+.glitterLeft {
+    animation-name: pulse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    animation-timing-function: ease-in;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95) rotate(5deg);
+    }
+    70% {
+        transform: rotate(5deg);
     }
     100%{
         transform: scale(0.95);
     }
-}
-
-#Text {
-
-    
-}
-
-@keyframes text{
 
 }
 
 .tarotCards {
-    animation-name: 
+
 
 }
