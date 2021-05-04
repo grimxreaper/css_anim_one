@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+#Scythe {
+    /* animation: pulse 5s infinite; */
+    animation-name: Scythe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate-reverse; */
+    animation-timing-function: ease-in;
+    transform-origin: center;
+}
+
+@keyframes Scythe{
+    from {
+        transform: rotateY(10deg);
+    }
+    to {
+        transform: rotateY(60deg);
+    }
+}
+
+#GlitterRight {
+
+}
