@@ -14,16 +14,17 @@ body {
     animation-duration: 4s;
     animation-iteration-count: infinite;
     /* animation-direction: alternate-reverse; */
-    animation-timing-function: ease-in;
+    /* animation-timing-function: ease-in; */
     transform-origin: center;
+    transform-box: border-box;
 }
 
 @keyframes Scythe{
     from {
-        transform: rotateY(10deg);
+        transform: rotate(50deg);
     }
     to {
-        transform: rotateY(60deg);
+        transform: rotate(-5deg);
     }
 }
 
